@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Effra-Light';
+    src: local('Effra Light'), local('Effra-Light'),
+        url('Effra-Light.woff2') format('woff2'),
+        url('Effra-Light.woff') format('woff'),
+        url('Effra-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
