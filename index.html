@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href = "fonts/Effra/Effra Regular/style.css" rel = "stylesheet" type = "text/css"/>
+    <!--<link href = "fonts/Effra/Effra Regular/style.css" rel = "stylesheet" type = "text/css"/>
     <link href = "fonts/Effra/Effra Heavy/style.css" rel = "stylesheet" type = "text/css"/>
     <link href = "fonts/Effra/Effra Bold/style.css" rel = "stylesheet" type = "text/css"/>
-    <link href = "fonts/Effra/Effra Light/style.css" rel = "stylesheet" type = "text/css"/>
+    <link href = "fonts/Effra/Effra Light/style.css" rel = "stylesheet" type = "text/css"/>-->
+    <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet">
+    <link href="http://db.onlinewebfonts.com/c/ca32b369590c4b105ed8cbdf1f8da722?family=GoodDogNewW00-Regular" rel="stylesheet" type="text/css"/>
     <title>Findtrend</title>
 </head>
 <body>
+    <div class="modal-background hide">
+        <div class="modal">
+            <div class="modal-cross">×</div>
+            <h2>In progress...</h2>
+            <p>This part of the website is still being developed.
+                <br>Please, come back later!
+            </p>
+            <img src="https://i.giphy.com/media/YAnpMSHcurJVS/giphy.webp" alt="Peter Griffin slowly typing on the computer with long pink nails">
+        </div>
+    </div>
+    <div class="screen-fader hide"></div>
+    <div class="burger-menu"></div>
     <nav id="navbar">
         <div class="logo-wrapper">
             <img src="https://i.ibb.co/HhppSvZ/Vector.png" alt="Green Findtrend logo">
@@ -31,6 +47,11 @@
             <span id="login-button">Login</span>
             <button id="register-button">Register</button>
         </div>
+        <div id="burger-menu-icon-container">
+            <div class="burger-menu-line"></div>
+            <div class="burger-menu-line"></div>
+            <div class="burger-menu-cross hide">×</div>
+        </div>
     </nav>
     <section id="hero-section" class="section">
         <div class="section-content">
@@ -39,20 +60,50 @@
                 <br>Findtrend  let you gathers all of your favorite website into one place.
             </p>
             <button>Get Started 🔥</button>
+            <div id="tilted-tabs">
+                <div id="twitter-tab" class="tilted-tab tab-black-rectangle">
+                    <img src="https://i.ibb.co/8KykDMy/image-96.png" alt="Twitter logo">
+                    <span>Cryptopunk - Search</span>
+                    <div class='close-tab-cross'>×</div>
+                </div>
+                <div id="pinterest-tab" class="tilted-tab tab-black-rectangle">
+                    <img src="https://i.ibb.co/3yD8Tdm/image-111.png" alt="Pinterest logo">
+                    <span>Popular Design - Search</span>
+                    <div class='close-tab-cross'>×</div>
+                </div>
+                <div id="facebook-tab" class="tilted-tab tab-black-rectangle">
+                    <img src="https://i.ibb.co/wdFkKmG/image-105.png" alt="Facebook logo">
+                    <span>Product Design - Search</span>
+                    <div class='close-tab-cross'>×</div>
+                </div>
+                <div id="dribble-tab" class="tilted-tab tab-black-rectangle">
+                    <img src="https://i.ibb.co/bvCnXN3/Rectangle-6.png" alt="Dribble logo">
+                    <span>Elon Musk - Search</span>
+                    <div class='close-tab-cross'>×</div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="open-new-tabs-section">
         <div class="section-content">
             <h2 class="section-heading">Open new tabs is sh*t</h2>
             <div id="open-new-tabs-section-white-rectangle">
-                <div id="open-new-tabs-section-black-rectangle">
+                <div id="arrow-top" class="arrow">
+                    <p>You just need one<br>tab now</p>
+                    <img src="https://i.ibb.co/QDrcvsz/Arrow-03.png" alt="Arrow pointing to tab example">
+                </div>
+                <div class="tab-black-rectangle">
                     <img src="https://i.ibb.co/HhppSvZ/Vector.png" alt="Green Findtrend logo" height="31.74" width="auto">
                     <span>Findtrend - Elon Musk</span>
-                    <div id='close-tab-cross'>×</div>
+                    <div class='close-tab-cross'>×</div>
+                </div>
+                <div id="arrow-bottom" class="arrow">
+                    <img src="https://i.ibb.co/QDrcvsz/Arrow-03.png" alt="Arrow pointing to tab example">
+                    <p>solution for<br>discover a trend</p>
                 </div>
             </div>
-            <div class="section-body">A solution for your browser tabs and don’t make your device get slower over time. 
-                Get<br>ease and faster to discover a trend with just one tab.
+            <div class="section-body">A solution for your browser tabs and don’t make <br class="show--sm"> your device get slower over time. 
+                Get<br class="hide--sm">ease and <br class="show--sm"> faster to discover a trend with just one tab.
             </div>
         </div>
     </section>
@@ -180,6 +231,10 @@
                     <div class="toggle"></div>
                 </div>
                 <div id="yearly">Yearly</div>
+                <div id="arrow-saving" class="arrow">
+                    <img src="https://i.ibb.co/QDrcvsz/Arrow-03.png" alt="Arrow pointing to tab example">
+                    <p>Save 10%<br>per month</p>
+                </div>
             </div>
             <div id="pricing-cards">
                 <div class="pricing-card personal">
@@ -252,3 +307,5 @@
     </div>
 </footer>
 </html>
+
+<script src="/index.js"></script>

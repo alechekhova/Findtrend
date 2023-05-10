@@ -21,25 +21,76 @@ html{
 }
 
 .section-heading{
-    font-family: 'Effra-Bold', sans-serif;
+    font-family: /*'Effra-Bold', sans-serif;*/ 'Effra', sans-serif;
 }
 
 .section-heading--heavy{
-    font-family: 'Effra-Heavy', sans-serif;
-}
-
-.section-heading--bold{
-    font-family: 'Effra-Bold', sans-serif;
+    font-family: /*'Effra-Heavy', sans-serif*/ 'Effra Heavy', sans-serif;
 }
 
 button{
     border-radius: 40px;
     border: none;
-    font-family: 'Effra-Bold', sans-serif;
+    font-family: /*'Effra-Bold', sans-serif;*/ 'Effra', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+
+.show--sm{
+    display: none;
+}
+
+/*Screen fader*/
+
+.screen-fader,
+.modal-background{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+}
+
+/*Modal*/
+.modal-background
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid #A8FF35;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    min-height: 30em;
+    width: 27.8em;
+    padding-inline: 2em;
+    padding-block: 3em;
+}
+
+.modal p{
+    margin-top: 1rem;
+    line-height: 150%;
+}
+
+.modal img{
+    margin-top: 2em;
+    width: 100%;
+}
+
+.modal-cross{
+    position: absolute;
+    line-height: 0;
+    right: 1.4rem;
+    top: 1.8rem;
+    font-size: 2.3rem;
+    cursor: pointer;
 }
 
 /*Navbar*/
@@ -98,12 +149,67 @@ button{
     padding-block: 0.7em;
 }
 
+/*Burger menu*/
+
+#burger-menu-icon-container{
+    width: 1.7em;
+    height: 1.7em;
+    padding-block: 0.5em;
+    padding-inline: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#burger-menu-icon-container:hover{
+    cursor: pointer;
+}
+
+.burger-menu-line{
+    border-top: 0.15em solid white;
+    width: 100%;
+}
+
+.burger-menu-cross{
+    font-size: 2.3rem;
+    line-height: 0%;
+    padding: 0.3rem;
+}
+
+.burger-menu{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;/*var(--navbar-height);*/
+    background-color: black;
+    z-index: 10;
+    padding-block: 5.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2em;
+    color: white;
+    transition: 1s;
+}
+
+.burger-menu.is-active{
+    top: var(--navbar-height);
+}
+
+.burger-menu div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /*Hero section*/
 
 #navbar,
 #hero-section{
-    background-image: url("https://i.ibb.co/smdDnSn/Bg-hero.png");
-    background-size: cover;
+    /*background-image: url("https://i.ibb.co/smdDnSn/Bg-hero.png");*/
+    background-image: url("https://i.ibb.co/gMbqgx7/Bg-hero-big-cropped.png");
 }
 
 #hero-section{
@@ -144,6 +250,77 @@ button{
     background-color: white;
 }
 
+#tilted-tabs{
+    margin-top: 4.3em;
+    display: none;
+}
+
+.tab-black-rectangle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.1vw;
+    background-color: black;
+    color: white;
+    padding-block: 1.125em;
+    padding-left: 1.7em;
+    padding-right: 1em;
+    position: relative;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tab-black-rectangle img{
+    width: 1.3em;
+    height: auto;
+}
+
+.close-tab-cross{
+    position: absolute;
+    font-size: 32px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    aspect-ratio: 1;
+    padding-right: 0.7em;
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    background: linear-gradient(270deg, #030303 53.65%, rgba(3, 3, 3, 0.6) 100%);
+}
+
+.tilted-tab{
+    background: #181818;
+    box-shadow: 0px 0.3em 0.3em rgba(0, 0, 0, 0.85);
+}
+
+.tilted-tab .close-tab-cross{
+    background: linear-gradient(270deg, #181818 53.65%, rgba(24, 24, 24, 0.8) 100%);
+}
+
+#twitter-tab{
+    z-index: 4;
+    rotate: -4deg;
+}
+
+#pinterest-tab{
+    z-index: 3;
+    rotate: 2deg;
+}
+
+#facebook-tab{
+    z-index: 2;
+    rotate: -2deg;
+}
+
+#dribble-tab{
+    z-index: 1;
+    rotate: 4deg;
+}
+
 /*Open new tabs section*/
 
 #open-new-tabs-section{
@@ -169,9 +346,7 @@ button{
 }
 
 #open-new-tabs-section-white-rectangle{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
+    
     padding-block: 2.5em;
     padding-inline: 3.3em;
     background-color: white;
@@ -179,35 +354,44 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#open-new-tabs-section-black-rectangle{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.1vw;
-    background-color: black;
-    color: white;
-    padding-block: 1.125em;
-    padding-left: 1.7em;
-    padding-right: 1em;
     position: relative;
-    white-space: nowrap;
 }
 
-#close-tab-cross{
+.arrow{
+    font-family: "GoodDogNewW00-Regular", sans-serif;
+    line-height: 1em;
+    display: none;
+}
+
+#arrow-top{
     position: absolute;
-    font-size: 32px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    aspect-ratio: 1;
-    padding-right: 0.7em;
-    display: grid;
-    justify-content: end;
-    align-content: center;
-    background: linear-gradient(270deg, #030303 53.65%, rgba(3, 3, 3, 0.6) 100%);
+    right: -1.2em;
+    top: -3.5em;
+}
+
+#arrow-top p{
+    padding-left: 0.3em;
+    rotate: 6deg;
+}
+
+#arrow-top img{
+    padding-right: 4.1em;
+    padding-top: 0.5em;
+}
+
+#arrow-bottom{
+    position: absolute;
+    left: -0.4em;
+    bottom: -3.3em;
+}
+
+#arrow-bottom p{
+    rotate: 1.13deg;
+}
+
+#arrow-bottom img{
+    transform: scaleX(-1);
+    rotate: -70deg;
 }
 
 /*Longtext section*/
@@ -280,7 +464,7 @@ button{
 #social-network-section .section-content{
     width: 95%;
     padding-top: 7.8em;
-    padding-bottom: max(84px, 15.5vh);
+    padding-bottom: 8.8em;
 }
 
 #social-network-section .section-heading{
@@ -324,6 +508,11 @@ button{
     padding-block: 0.9em;
 }
 
+#social-network-section button:hover{
+    background-color: #A8FF35;
+    color: black;
+}
+
 /*Pricing section*/
 
 #pricing-section{
@@ -351,6 +540,23 @@ button{
     justify-content: space-between;
     align-items: center;
     gap: 1.6em;
+    position: relative;
+}
+
+#arrow-saving{
+    position: absolute;
+    right: 0.5em;
+    bottom: -4em;
+}
+
+#arrow-saving img{
+    filter: invert(100%);
+    transform: scaleX(-1) scaleY(-1);
+    rotate: -100deg;
+}
+
+#arrow-saving p{
+    rotate: 6deg;
 }
 
 #monthly,
@@ -404,11 +610,13 @@ button{
 }
 
 .pricing-card-heading{
+    font-family: "Effra Medium", sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .price{
+    font-family: "Effra Medium", sans-serif;
     font-size: 3.6rem;
     font-weight: 400;
 }
@@ -428,6 +636,17 @@ button{
     color: black;
 }
 
+.pricing-card.personal button:hover,
+.pricing-card.premium button:hover{
+    background-color: black;
+    color: white;
+}
+
+.pricing-card.regular button:hover{
+    background-color: white;
+    color: black;
+}
+
 .pricing-card-subheading{
     margin-top: 0.4em;
     font-weight: 400;
@@ -437,6 +656,7 @@ button{
     width: 16.4em;
     border-top: 1px solid black;
     margin-block: 1.8em;
+    opacity: 0.2;
 }
 
 .pricing-card-options{
@@ -495,6 +715,11 @@ button{
     padding-inline: 2.9em;    
 }
 
+#join-us-section button:hover{
+    background-color: white;
+    color: black;
+}
+
 /*Footer*/
 
 footer{
@@ -513,6 +738,10 @@ footer{
     gap: 2.7vw;
 }
 
+/*General*/
+.hide{
+    display: none;
+}
 
 @media (max-width: 1220px){
     #logos-grid-container{
@@ -542,8 +771,13 @@ footer{
 }
 
 @media (max-width: 990px){
-    #navbar-links{
+    #navbar-links,
+    #login-register-buttons{
         display: none;
+    }
+
+    #burger-menu-icon-container{
+        display: inherit;
     }
 }
 
@@ -557,25 +791,204 @@ footer{
     #footer-links{
         display: none;
     }
-}
 
-@media (max-width: 600px){
-    #logos-grid-container{
-        display: flex;
+    footer{
+        height: auto;
         flex-direction: column;
+        font-size: 1.3rem;
+        padding-block: 4.4em;
     }
 
-    #socials-flex-container{
-        grid-template-columns: repeat(2, 1fr);
+    #footer-links{
+        display: inherit;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4.9em;
+        gap: 2.2em;
+    }
+
+    footer .logo-text{
+        display: inherit;
     }
 }
 
-@media (max-width: 530px){
-    #open-new-tabs-section-white-rectangle{
-        padding: 1.3em;
-    }
+
+/*Mobile*/
+
+@media (max-width: 600px) {
+
+    /*General*/
 
     html{
         font-size: 14px;
     }
+
+    .show--sm{
+        display: inherit;
+    }
+
+    .hide--sm{
+        display: none;
+    }
+
+    .section-heading{
+        font-family: 'Effra Heavy', sans-serif;
+    }
+
+    /*Modal*/
+    .modal{
+        width: 20em;
+        min-height: 27em;
+    }
+
+    /*Navbar*/
+
+    #navbar,
+    #hero-section{
+        background-image: url("https://i.ibb.co/0tj4scW/Bg-hero-sm-cropped.png");
+    }
+
+    .logo-text{
+        display: none;
+    }
+
+    /*Hero Section*/
+    #hero-section .section-heading{
+        font-size: 2.6rem;
+    }
+
+    #hero-section .section-content{
+        padding-bottom: 3.5em;
+    }
+
+    .tab-black-rectangle{
+        font-size: 1.45em;
+    }
+
+    #tilted-tabs{
+        display: inherit;
+    }
+
+    /*Open new tabs section*/
+
+    #open-new-tabs-section .section-heading{
+        font-size: 2.6rem;
+    }
+
+    #open-new-tabs-section .section-content{
+        width: 98%;
+        grid-row-gap: 5.7em;
+    }
+
+    .arrow{
+        display: block;
+    }
+
+    #open-new-tabs-section-white-rectangle{
+        padding: 1.3em;
+    }
+
+    /*Longtext section*/
+
+    #longtext-section .section-heading{
+        font-size: 2.6rem;
+    }
+
+    /*Partner section*/
+    #partner-section .section-heading{
+        font-size: 2.6rem;
+    }
+
+    #logos-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1em;
+    }
+
+    .brand-gray-rectangle{
+        width: 11.6em;
+        height: 5.3em;
+    }
+
+    /*Social network section*/
+
+    #social-network-section .section-heading{
+        font-size: 2.6rem;
+    }
+
+    #social-network-section .section-content{
+        width: 98%;
+        padding-bottom: 5.7em;
+    }
+
+    #socials-flex-container{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        width: 100%; 
+        margin-top: 2.3em;       
+    }
+
+    #socials-flex-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .socials-white-rectangle{
+        height: 4.6em;
+    }
+
+    #tweets{
+        margin-block: 2.3em ;
+    }
+
+    /*Pricing section*/
+
+    #pricing-section .section-content{
+        padding-top: 5.7em;
+    }
+
+    #pricing-section .section-heading{
+        font-size: 2.6rem;
+    }
+
+    .toggle-outline{
+        width: 7.4em;
+    }
+
+    #pricing-cards{
+        padding-top: 5.7em;
+    }
+
+    .pricing-card{
+        font-size: 1.3rem;
+        width: 18em;
+        padding-inline: 1.6em;
+        padding-bottom: 6em;
+        min-height: 34em;
+    }
+
+    .pricing-card button{
+        font-size: 1em;
+    }
+
+    .pricing-card-line{
+        margin-top: 1.3em;
+        width: 14.7em;
+    }
+
+    .pricing-card-options{
+        margin-top: 1.9em;
+    }
+
+    /*Join us section*/
+
+    #join-us-section .section-content{
+        padding-block: 5.7em;
+    }
+
+    #join-us-section .section-heading{
+        font-size: 2.6rem;
+    }
+
 }
+
