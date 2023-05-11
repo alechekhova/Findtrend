@@ -1,16 +1,16 @@
 /*Adding navbar content to drop-down menu*/
-let burgerMenu = document.querySelector(".burger-menu");
-let navbar = document.querySelector("#navbar");
-let navbarLinks = document.querySelector("#navbar-links");
-let loginRegisterButtons = document.querySelector("#login-register-buttons");
+const burgerMenu = document.querySelector("#burger-menu");
+const navbar = document.querySelector("#navbar");
+const navbarLinks = document.querySelector("#navbar-links");
+const loginRegisterButtons = document.querySelector("#login-register-buttons");
 
 burgerMenu.innerHTML = navbarLinks.innerHTML + loginRegisterButtons.innerHTML;
 
 /*Burger menu*/
-let burgerMenuIcon = document.querySelector("#burger-menu-icon-container");
-let burgerLines = document.querySelectorAll(".burger-menu-line");
-let burgerCross = document.querySelector(".burger-menu-cross");
-let screenFader = document.querySelector(".screen-fader");
+const burgerMenuIcon = document.querySelector("#burger-menu-icon-container");
+const burgerLines = document.querySelectorAll(".burger-menu-line");
+const burgerCross = document.querySelector("#burger-menu-cross");
+const screenFader = document.querySelector("#screen-fader");
 
 burgerMenuIcon.addEventListener("click", () => {
     toggleBurgerMenu();
@@ -18,9 +18,9 @@ burgerMenuIcon.addEventListener("click", () => {
 
 
 /*Modal*/
-let buttons = document.querySelectorAll(".burger-menu *, #navbar-links *, #footer-links *, #login-register-buttons *, button");
-let modal = document.querySelector(".modal-background");
-let modalCross = document.querySelector(".modal-cross");
+const buttons = document.querySelectorAll("#burger-menu *, #navbar-links *, #footer-links *, #login-register-buttons *, button");
+const modal = document.querySelector("#modal-background");
+const modalCross = document.querySelector("#modal-cross");
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -47,6 +47,8 @@ document.addEventListener("keyup", (e) => {
         modal.classList.toggle("hide");
     }
 })
+
+/*Functions*/
 
 function toggleBurgerMenu(){
     burgerMenu.classList.toggle("is-active");

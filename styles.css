@@ -95,7 +95,7 @@ button{
 
 /*Navbar*/
 
-#navbar{
+.navbar{
     height: var(--navbar-height);
     padding-block: 2.2em;
     padding-inline: 5.6vw;
@@ -118,31 +118,31 @@ button{
     gap: 0.4em;
 }
 
-#navbar-links{
+.navbar-links{
     display: flex;
     justify-content: center;
     gap: 2.7vw;
 }
 
-#navbar-links>:hover,
-#footer-links>:hover,
-#login-button:hover{
+.navbar-links>:hover,
+.footer-links>:hover,
+.login-button:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
-#register-button:hover{
+.register-button:hover{
     background-color: #A8FF35;
     cursor: pointer;
 }
 
-#login-register-buttons{
+.login-register-buttons{
     display: flex;
     align-items: center;
     gap: 2.7vw;
 }
 
-#register-button{
+.register-button{
     background-color: white;
     color: black;
     padding-inline: 1.8em;
@@ -151,7 +151,7 @@ button{
 
 /*Burger menu*/
 
-#burger-menu-icon-container{
+.burger-menu-icon-container{
     width: 1.7em;
     height: 1.7em;
     padding-block: 0.5em;
@@ -163,7 +163,7 @@ button{
     display: none;
 }
 
-#burger-menu-icon-container:hover{
+.burger-menu-icon-container:hover{
     cursor: pointer;
 }
 
@@ -206,38 +206,38 @@ button{
 
 /*Hero section*/
 
-#navbar,
-#hero-section{
+.navbar,
+.hero-section{
     /*background-image: url("https://i.ibb.co/smdDnSn/Bg-hero.png");*/
     background-image: url("https://i.ibb.co/gMbqgx7/Bg-hero-big-cropped.png");
 }
 
-#hero-section{
+.hero-section{
     display: flex;
     justify-content: center;
 }
 
-#hero-section .section-content{
+.hero-section .section-content{
     padding-top: calc(var(--navbar-height) + 5.6em);
     padding-bottom: 20.3em;
     width: 95%;
     text-align: center;
 }
 
-#hero-section .section-heading{
+.hero-section .section-heading{
     font-size: 4rem;
     font-weight: 900;
     color: white;
 }
 
-#hero-section .section-body{
+.hero-section .section-body{
     margin-top: 1.3em;
     margin-bottom: 2.2em;
     color: #8B8B8B;
     line-height: 150%;
 }
 
-#hero-section button{
+.hero-section button{
     background-color: #A8FF35;
     color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -245,12 +245,12 @@ button{
     padding-block: 0.9em;
 }
 
-#hero-section button:hover{
+.hero-section button:hover{
     cursor: pointer;
     background-color: white;
 }
 
-#tilted-tabs{
+.tilted-tabs{
     margin-top: 4.3em;
     display: none;
 }
@@ -301,51 +301,51 @@ button{
     background: linear-gradient(270deg, #181818 53.65%, rgba(24, 24, 24, 0.8) 100%);
 }
 
-#twitter-tab{
+.twitter-tab{
     z-index: 4;
     rotate: -4deg;
 }
 
-#pinterest-tab{
+.pinterest-tab{
     z-index: 3;
     rotate: 2deg;
 }
 
-#facebook-tab{
+.facebook-tab{
     z-index: 2;
     rotate: -2deg;
 }
 
-#dribble-tab{
+.dribble-tab{
     z-index: 1;
     rotate: 4deg;
 }
 
 /*Open new tabs section*/
 
-#open-new-tabs-section{
+.open-new-tabs-section{
     background-color: #A8FF35;
     display: grid;
     justify-items: center;
 }
 
-#open-new-tabs-section .section-heading{
+.open-new-tabs-section .section-heading{
     font-size: 4rem;
     font-weight: 700;
 }
 
-#open-new-tabs-section .section-content{
+.open-new-tabs-section .section-content{
     padding-block: 7.8em;
     grid-row-gap: 3.3em;
     text-align: center;
     width: 90%;
 }
 
-#open-new-tabs-section .section-body{
+.open-new-tabs-section .section-body{
     line-height: 150%;
 }
 
-#open-new-tabs-section-white-rectangle{
+.open-new-tabs-section-white-rectangle{
     
     padding-block: 2.5em;
     padding-inline: 3.3em;
@@ -363,74 +363,74 @@ button{
     display: none;
 }
 
-#arrow-top{
+.arrow-top{
     position: absolute;
     right: -1.2em;
     top: -3.5em;
 }
 
-#arrow-top p{
+.arrow-top p{
     padding-left: 0.3em;
     rotate: 6deg;
 }
 
-#arrow-top img{
+.arrow-top img{
     padding-right: 4.1em;
     padding-top: 0.5em;
 }
 
-#arrow-bottom{
+.arrow-bottom{
     position: absolute;
     left: -0.4em;
     bottom: -3.3em;
 }
 
-#arrow-bottom p{
+.arrow-bottom p{
     rotate: 1.13deg;
 }
 
-#arrow-bottom img{
+.arrow-bottom img{
     transform: scaleX(-1);
     rotate: -70deg;
 }
 
 /*Longtext section*/
 
-#longtext-section {
+.longtext-section {
     display: flex;
     justify-content: center;
 }
 
-#longtext-section .section-content{
+.longtext-section .section-content{
     font-size: 3.5rem;
     font-weight: 700;
     padding-top: 2.2em;
     width: 95%;
 }
 
-#longtext-section .text--gray{
+.longtext-section .text--gray{
     color: #ADADAD;
 }
 
 /*Partner section*/
 
-#partner-section{
+.partner-section{
     display: flex;
     justify-content: center;
 }
 
-#partner-section .section-content{
+.partner-section .section-content{
     margin-top: 16.2em;
     text-align: center;
     width: 95%;
 }
 
-#partner-section .section-heading{
+.partner-section .section-heading{
     font-size: 3.6rem;
     font-weight: 700;
 }
 
-#logos-grid-container{
+.logos-grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.8em;
@@ -455,25 +455,25 @@ button{
 
 /*Social networks section*/
 
-#social-network-section{
+.social-network-section{
     background-color: #FAFAFA;
     display: flex;
     justify-content: center;
 }
 
-#social-network-section .section-content{
+.social-network-section .section-content{
     width: 95%;
     padding-top: 7.8em;
     padding-bottom: 8.8em;
 }
 
-#social-network-section .section-heading{
+.social-network-section .section-heading{
     font-size: 3.6rem;
     font-weight: 700;
     text-align: center;
 }
 
-#socials-flex-container{
+.socials-flex-container{
     display: flex;
     justify-content: center;
     margin-top: 4.4em;
@@ -494,47 +494,47 @@ button{
     width: 60%;
 }
 
-#twitter-rectangle{
+.twitter-rectangle{
     background-color: #A8FF35;
 }
 
-#tweets{
+.tweets{
     margin-top: 4.3em;
     margin-bottom: 4.4em;
 }
 
-#social-network-section button{
+.social-network-section button{
     padding-inline: 1.8em;
     padding-block: 0.9em;
 }
 
-#social-network-section button:hover{
+.social-network-section button:hover{
     background-color: #A8FF35;
     color: black;
 }
 
 /*Pricing section*/
 
-#pricing-section{
+.pricing-section{
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
 }
 
-#pricing-section .section-content{
+.pricing-section .section-content{
     padding-top: 7.8em;
     padding-bottom: 7.1em;
     width: 95%;
 }
 
-#pricing-section .section-heading{
+.pricing-section .section-heading{
     font-size: 3.6rem;
     font-weight: 700;
     text-align: center;
 }
 
-#monthly-yearly-button-wrapper {
+.monthly-yearly-button-wrapper {
     margin-top: 2.2em;
     display: flex;
     justify-content: space-between;
@@ -543,30 +543,30 @@ button{
     position: relative;
 }
 
-#arrow-saving{
+.arrow-saving{
     position: absolute;
     right: 0.5em;
     bottom: -4em;
 }
 
-#arrow-saving img{
+.arrow-saving img{
     filter: invert(100%);
     transform: scaleX(-1) scaleY(-1);
     rotate: -100deg;
 }
 
-#arrow-saving p{
+.arrow-saving p{
     rotate: 6deg;
 }
 
-#monthly,
-#yearly{
+.monthly,
+.yearly{
     font-family: 'Inter', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-#yearly{
+.yearly{
     color: #F5F5F5;
     opacity: 0.5;
 }
@@ -590,7 +590,7 @@ button{
     bottom: 0.4em;
 }
 
-#pricing-cards {
+.pricing-cards {
     margin-top: 2.2em;
     display: flex;
     justify-content: center;
@@ -682,40 +682,40 @@ button{
 
 /*Join us section*/
 
-#join-us-section{
+.join-us-section{
     background-color: #A8FF35;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#join-us-section .section-content{
+.join-us-section .section-content{
     width: 95%;
     padding-block: 7.8em;
 }
 
-#join-us-section .section-heading{
+.join-us-section .section-heading{
     font-size: 4rem;
     font-weight: 900;
     text-align: center;
 }
 
-#join-us-section button{
+.join-us-section button{
     margin-top: 2.2em;
 }
 
-#join-us-section .text--gray{
+.join-us-section .text--gray{
     color: #87D322;
 }
 
-#join-us-section button{
+.join-us-section button{
     background-color: black;
     color: white;
     padding-block: 0.9em;
     padding-inline: 2.9em;    
 }
 
-#join-us-section button:hover{
+.join-us-section button:hover{
     background-color: white;
     color: black;
 }
@@ -732,7 +732,7 @@ footer{
     
 }
 
-#footer-links{
+.footer-links{
     display: flex;
     justify-content: space-between;
     gap: 2.7vw;
@@ -744,7 +744,7 @@ footer{
 }
 
 @media (max-width: 1220px){
-    #logos-grid-container{
+    .logos-grid-container{
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -752,11 +752,11 @@ footer{
         grid-column-start: 2;
     }
 
-    #longtext-section{
+    .longtext-section{
         padding-inline: 4.1vw;
     }
 
-    #socials-flex-container{
+    .socials-flex-container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1.3em;
@@ -765,33 +765,29 @@ footer{
 }
 
 @media (max-width: 1180px){
-    #pricing-cards{
+    .pricing-cards{
         flex-direction: column;
     }
 }
 
 @media (max-width: 990px){
-    #navbar-links,
-    #login-register-buttons{
+    .navbar-links,
+    .login-register-buttons{
         display: none;
     }
 
-    #burger-menu-icon-container{
+    .burger-menu-icon-container{
         display: inherit;
     }
 }
 
 @media (max-width: 905px){
-    #logos-grid-container{
+    .logos-grid-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 810px){
-    #footer-links{
-        display: none;
-    }
-
     footer{
         height: auto;
         flex-direction: column;
@@ -799,7 +795,7 @@ footer{
         padding-block: 4.4em;
     }
 
-    #footer-links{
+    .footer-links{
         display: inherit;
         flex-direction: column;
         text-align: center;
@@ -843,8 +839,8 @@ footer{
 
     /*Navbar*/
 
-    #navbar,
-    #hero-section{
+    .navbar,
+    .hero-section{
         background-image: url("https://i.ibb.co/0tj4scW/Bg-hero-sm-cropped.png");
     }
 
@@ -853,11 +849,11 @@ footer{
     }
 
     /*Hero Section*/
-    #hero-section .section-heading{
+    .hero-section .section-heading{
         font-size: 2.6rem;
     }
 
-    #hero-section .section-content{
+    .hero-section .section-content{
         padding-bottom: 3.5em;
     }
 
@@ -865,17 +861,17 @@ footer{
         font-size: 1.45em;
     }
 
-    #tilted-tabs{
+    .tilted-tabs{
         display: inherit;
     }
 
     /*Open new tabs section*/
 
-    #open-new-tabs-section .section-heading{
+    .open-new-tabs-section .section-heading{
         font-size: 2.6rem;
     }
 
-    #open-new-tabs-section .section-content{
+    .open-new-tabs-section .section-content{
         width: 98%;
         grid-row-gap: 5.7em;
     }
@@ -884,22 +880,22 @@ footer{
         display: block;
     }
 
-    #open-new-tabs-section-white-rectangle{
+    .open-new-tabs-section-white-rectangle{
         padding: 1.3em;
     }
 
     /*Longtext section*/
 
-    #longtext-section .section-heading{
+    .longtext-section .section-heading{
         font-size: 2.6rem;
     }
 
     /*Partner section*/
-    #partner-section .section-heading{
+    .partner-section .section-heading{
         font-size: 2.6rem;
     }
 
-    #logos-grid-container{
+    .logos-grid-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 1em;
@@ -912,16 +908,16 @@ footer{
 
     /*Social network section*/
 
-    #social-network-section .section-heading{
+    .social-network-section .section-heading{
         font-size: 2.6rem;
     }
 
-    #social-network-section .section-content{
+    .social-network-section .section-content{
         width: 98%;
         padding-bottom: 5.7em;
     }
 
-    #socials-flex-container{
+    .socials-flex-container{
         display: flex;
         justify-content: flex-start;
         overflow-x: scroll;
@@ -929,7 +925,7 @@ footer{
         margin-top: 2.3em;       
     }
 
-    #socials-flex-container::-webkit-scrollbar{
+    .socials-flex-container::-webkit-scrollbar{
         display: none;
     }
 
@@ -937,17 +933,17 @@ footer{
         height: 4.6em;
     }
 
-    #tweets{
+    .tweets{
         margin-block: 2.3em ;
     }
 
     /*Pricing section*/
 
-    #pricing-section .section-content{
+    .pricing-section .section-content{
         padding-top: 5.7em;
     }
 
-    #pricing-section .section-heading{
+    .pricing-section .section-heading{
         font-size: 2.6rem;
     }
 
@@ -955,7 +951,7 @@ footer{
         width: 7.4em;
     }
 
-    #pricing-cards{
+    .pricing-cards{
         padding-top: 5.7em;
     }
 
@@ -982,11 +978,11 @@ footer{
 
     /*Join us section*/
 
-    #join-us-section .section-content{
+    .join-us-section .section-content{
         padding-block: 5.7em;
     }
 
-    #join-us-section .section-heading{
+    .join-us-section .section-heading{
         font-size: 2.6rem;
     }
 
