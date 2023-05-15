@@ -19,12 +19,12 @@ burgerMenuIcon.addEventListener("click", () => {
 
 /*Modal*/
 const buttons = document.querySelectorAll("#burger-menu *, #navbar-links *, #footer-links *, #login-register-buttons *, button");
-const modal = document.querySelector("#modal-background");
+const modal = document.querySelector("#modal");
 const modalCross = document.querySelector("#modal-cross");
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
-        modal.classList.toggle("hide");
+        modal.showModal();
         if(burgerMenu.classList.contains("is-active")){
             toggleBurgerMenu();
         }
@@ -32,21 +32,22 @@ buttons.forEach(button => {
 });
 
 modalCross.addEventListener("click", () => {
-    modal.classList.add("hide");
+    modal.close();
 });
 
-modal.addEventListener("click", (e) =>{
-    if(e.target !== modal){
-        return;
+modal.addEventListener("click", e => {
+    const dialogDimensions = modal.getBoundingClientRect()
+    if (
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ) {
+      modal.close()
     }
-    modal.classList.toggle("hide");
-});
+  })
 
-document.addEventListener("keyup", (e) => {
-    if(e.key === 'Escape' && !modal.classList.contains("hide")){
-        modal.classList.toggle("hide");
-    }
-})
+
 
 /*Functions*/
 

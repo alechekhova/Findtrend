@@ -45,8 +45,7 @@ button{
 
 /*Screen fader*/
 
-.screen-fader,
-.modal-background{
+.screen-fader{
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     inset: 0;
@@ -54,12 +53,9 @@ button{
 }
 
 /*Modal*/
-.modal-background
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 11;
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .modal{
@@ -67,11 +63,15 @@ button{
     border: 1px solid #A8FF35;
     color: white;
     border-radius: 30px;
-    position: relative;
     min-height: 30em;
     width: 27.8em;
     padding-inline: 2em;
     padding-block: 3em;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .modal p{
