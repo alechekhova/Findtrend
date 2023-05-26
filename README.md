@@ -14,8 +14,7 @@
 
 ### Screenshot
 
-Desktop
-![](./images/DesktopScreenshot.PNG)
+![](./images/DesktopSreenshot.PNG)
 
 Mobile
 ![](./images/MobileScreenshot.PNG)
