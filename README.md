@@ -23,7 +23,7 @@ Mobile
 ### Links
 
 - Solution URL: [https://github.com/alechekhova/Findtrend](https://github.com/alechekhova/Findtrend)
-- Live Site URL: [https://alechekhova.github.io/Findtrend/](https://alechekhova.github.io/Findtrend/)
+- Live Site URL: [https://codepen.io/alechekhova/full/KKGqEWL](https://codepen.io/alechekhova/full/KKGqEWL)
 
 ## My process
 
