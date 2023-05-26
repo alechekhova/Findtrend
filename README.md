@@ -12,11 +12,10 @@
 
 ## Overview
 
-### Screenshot
+### Screenshots
 
 ![](./images/DesktopSreenshot.PNG)
 
-Mobile
 ![](./images/MobileScreenshot.PNG)
 
 ### Links
