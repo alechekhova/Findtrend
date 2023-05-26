@@ -22,8 +22,8 @@ Mobile
 
 ### Links
 
-- Solution URL: [https://github.com/alechekhova/QR-code-component](https://github.com/alechekhova/Findtrend)
-- Live Site URL: [https://alechekhova.github.io/QR-code-component/](https://alechekhova.github.io/Findtrend/)
+- Solution URL: [https://github.com/alechekhova/Findtrend](https://github.com/alechekhova/Findtrend)
+- Live Site URL: [https://alechekhova.github.io/Findtrend/](https://alechekhova.github.io/Findtrend/)
 
 ## My process
 
