@@ -21,7 +21,7 @@
 ### Links
 
 - Solution URL: [https://github.com/alechekhova/Findtrend](https://github.com/alechekhova/Findtrend)
-- Live Site URL: [https://codepen.io/alechekhova/full/KKGqEWL](https://codepen.io/alechekhova/full/KKGqEWL)
+- Live Site URL: [https://findtrend-eta.vercel.app/](https://findtrend-eta.vercel.app/)
 
 ## My process
 
